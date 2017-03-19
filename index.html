@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Even Odd</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+		<h1>Even-Odd</h1>
+		
+		<input type="text" id="inputEven">
+
+		<br>
+
+		<button type="button" onclick="ShowforEvnOd()">Click Here To Show Even Or Odd</button>
+
+		<h2 id="ShowEven"></h2>
+
+
+		<script>
+
+			function ShowforEvnOd(){
+				var a=document.getElementById("inputEven").value;
+				var Disp=document.getElementById("ShowEven");
+
+				if(a%2==0){
+					Disp.innerHTML="The number is Even";
+				} 
+				else {
+					Disp.innerHTML="The number is Odd";
+					}
+			}
+
+		</script>
+
+</body>
+
+</html>
